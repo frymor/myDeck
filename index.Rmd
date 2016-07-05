@@ -211,8 +211,8 @@ install_github('slidifyLibraries', 'ramnathv')
 
 ## Publishing
 
-slidify allows the user to directly publish or share the results as well as the analysis method via different repositories.
-This is easily done with e.g. 
+`slidify` allows the user to directly publish or share the results as well as the analysis method via different repositories.
+This can be easily done with e.g. 
 
 - [github](github.com)
 - [rpubs](rpubs.com)

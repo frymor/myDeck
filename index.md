@@ -236,11 +236,16 @@ This is easily done with e.g.
 
 
 ```r
+library(slidify)
 publish_github("myDeck", username="frymor")
 ```
 
 ```
-## Error in eval(expr, envir, enclos): could not find function "publish_github"
+## Publishing deck to frymor/myDeck
+```
+
+```
+## You can now view your slide deck at http://frymor.github.com/myDeck
 ```
 
 
