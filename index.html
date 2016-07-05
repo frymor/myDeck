@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introducing Shiny and RStudio</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Introducing Shiny and RStudio">
+  <meta name="author" content="Assa Yeroslaviz">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/bioinfo-core.jpg">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Introducing Shiny and RStudio</h1>
+    <h2></h2>
+    <p>Assa Yeroslaviz<br/>Dept. Computatational Biology</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <style type="text/css">
+body {background:grey transparent;
+}
+</style>
+
+<h2>Topics</h2>
+
+<ol>
+<li>why RStudio?</li>
+<li>Creating presentations with R.</li>
+<li>why using Shiny?</li>
+<li>Advantages of using Shiny.</li>
+<li>examples.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>RStudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>RStudio offers multiple advantages compare to the normal terminal / command line </p>
+
+<p><font color="#3366ff">
+  <b>user friendly and easy-to-use IDE </b>
+</font></p>
+
+<p><img src="https://s26.postimg.org/g1f9iy5ah/Rstudio.png" alt="GUI"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>RStudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>RStudio offers multiple advantages compare to the normal terminal / command line </p>
+
+<p><font color="#3366ff">
+<b> source codes, STDOUT, images and results are in the same windows. </b>
+</font></p>
+
+<p><img class='center' src='https://s26.postimg.org/t4aw27vih/Rstudio1.png' height=450px width=600px /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>RStudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>RStudio offers multiple advantages compare to the normal terminal / command line </p>
+
+<ul class = "build incremental">
+<li>Open source</li>
+<li>It runs on every OS and there is a <font color="#3366ff">server version</font></li>
+<li>Various features adn add-ons to increase efficiency. </li>
+<li>Continuously under development but very stable. </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>RStudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>RStudio offers multiple advantages compare to the normal terminal / command line </p>
+
+<ul class = "build incremental">
+<li>using the projects in RStudio you can isolate code and results from diﬀerent projects.<br></li>
+<li>Restart where you left oﬀ.</li>
+<li>Have all the output under one roof (the R environment,  the object, the plots, etc. )</li>
+<li>it can automatically creates documentation of your results, comments etc.</li>
+<li>can creates html, pdf  or word documents</li>
+<li>presentations are also possible</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-6" style="background:grey;">
+  <hgroup>
+    <h2>Creating presentation using RStudio</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>ioslides</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>based on the <a href="http://rmarkdown.rstudio.com/">rmarkdown</a> language.</li>
+</ul>
+
+<p><img src="./assets/img/rmarkdown.png" alt=""></p>
+
+<p>-it has several layouts and advanced options. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>ioslides</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><b> header </b> </p>
+
+<pre><code class="r">---
+title: &quot;Introducing Shiny and RStudio&quot;
+author: &quot;Assa Yeroslaviz - Dept. Computational Biology&quot;
+output: 
+  ioslides_presentation:
+        widescreen: true
+        transition: faster
+---
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>ioslides</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><b> Slide with Bullets </b></p>
+
+<ul>
+<li>Bullet 1</li>
+<li>Bullet 2</li>
+<li>Bullet 3</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>ioslides</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><b> Slide with R Output </b></p>
+
+<pre><code class="r">summary(cars)
+</code></pre>
+
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>ioslides</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><b> Slide with Plot </b></p>
+
+<pre><code class="r">library(ggplot2)
+
+sizes &lt;- expand.grid(size = (0:3) * 2, stroke = (0:3) * 2)
+ggplot(sizes, aes(size, stroke, size = size, stroke = stroke)) + 
+  geom_abline(slope = -1, intercept = 6, colour = &quot;white&quot;, size = 6) + 
+  geom_point(shape = 21, fill = &quot;red&quot;) +
+  scale_size_identity()
+</code></pre>
+
+<p><img src="figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>slidify</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>advanced possibilities for interactive presentations</p>
+
+<p>for more information see <a href="http://slidify.org/">slidify</a> (<a href="http://slidify.org/">http://slidify.org/</a>)</p>
+
+<p>similar functionality as Latex</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Install packages</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><code>Slidify</code> works in R, so you need to download <a href="http://cran.r-project.org">that</a> if you haven&#39;t yet.</li>
+<li>You also need to make sure you have all of the necessary dependencies installed on your computer</li>
+<li>Open R and copy and paste the following code into the console (you only need to do this once)</li>
+</ul>
+
+<pre><code class="r">install.packages(&quot;devtools&quot;)  
+install_github(&#39;slidify&#39;, &#39;ramnathv&#39;)  
+install_github(&#39;slidifyLibraries&#39;, &#39;ramnathv&#39;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-14" style="background:;">
+  <article data-timings="">
+    <p><q> <font color="white"> A framework is a collection of stylesheets, javascripts and layouts that control the style and appearance of a slide deck. </font> </q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="centrepre" id="slide-15">
+<hgroup>
+  <h2>frameworks</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<pre><code>---
+title: Frameworks
+framework: revealjs
+mode: selfcontained
+---
+
+## Slide 1
+
+Some content
+
+--- 
+
+## Slide 2
+
+Some content
+</code></pre>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>frameworks</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src='./demos/frameworks/solarized/index.html'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>frameworks</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src='./demos/frameworks/vertical/index.html'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Publishing</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>slidify allows the user to directly publish or share the results as well as the analysis method via different repositories.
+This is easily done with e.g. </p>
+
+<ul>
+<li><a href="github.com">github</a></li>
+<li><a href="rpubs.com">rpubs</a></li>
+<li><a href="dropbox.com">dropbox</a></li>
+</ul>
+
+<pre><code class="r">publish_github(&quot;myDeck&quot;, username=&quot;frymor&quot;)
+</code></pre>
+
+<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;publish_github&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19">
+  <hgroup>
+    <h3>Two Columns</h3>
+  </hgroup>
+  <article>
+    <hr noshade size=4 color='red'>  
+    <p>This text should span the entire slide.</p>
+  
+    <div class='left' style='float:left;width:48%'>
+     <h2>Left</h2>
+
+<p>This text should float to the left.</p>
+
+    </div>    
+    <div class='right' style='float:right;width:48%'>
+     <h2>Right</h2>
+
+<p>This text should float to the right.</p>
+
+    </div>
+  </article>
+</slide>
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Read-And-Delete</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Edit YAML front matter</li>
+<li>Write using R Markdown</li>
+<li>Use an empty line followed by three dashes to separate slides!</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>creates a presentation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>slidify</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='RStudio'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='RStudio'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='RStudio'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='RStudio'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Creating presentation using RStudio'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='ioslides'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='ioslides'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='ioslides'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='ioslides'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='ioslides'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='slidify'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Install packages'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='NA'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='frameworks'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='frameworks'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='frameworks'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Publishing'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Two Columns'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Read-And-Delete'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='creates a presentation'>
+         21
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
